@@ -1,0 +1,6 @@
+-cp src
+-L coconut.vdom
+-main BaseApp
+-js main.js
+-D analyzer-optimize
+-dce full
