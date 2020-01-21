@@ -8,14 +8,14 @@ class PlayerView extends View {
 
     function render()
     <div class="player" id={id}>
-        <div class="btnContainer">
-            <button onclick={player.dec(5)}>-5</button>
-            <button onclick={player.dec()}>-</button>
+        <div class="lifeBtnContainer">
+            <button class="lifeBtn" onclick={player.dec(5)}>-5</button>
+            <button class="lifeBtn" onclick={player.dec()}>-</button>
         </div>
         <div class="total">{player.lifeTotal}</div>
-        <div class="btnContainer">
-            <button onclick={player.inc(5)}>+5</button>
-            <button onclick={player.inc()}>+</button>
+        <div class="lifeBtnContainer">
+            <button class="lifeBtn" onclick={player.inc(5)}>+5</button>
+            <button class="lifeBtn" onclick={player.inc()}>+</button>
         </div>
     </div>;
 }
