@@ -19,14 +19,17 @@ body>div {
         flex-direction: row;
     }
     #separator {
-        height: 100%;
         width: 1rem;
+    }
+}
+@media (orientation: portrait) {
+    #separator {
+        height: 1rem;
     }
 }
 
 #separator {
     background-color: #151515;
-    height: 1rem;
     flex-grow: 0;
 }
 
