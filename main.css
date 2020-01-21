@@ -1,5 +1,6 @@
 html {
     font-size: 1vmin;
+    color: #151515;
 }
 
 html, body, body>div {
@@ -13,8 +14,18 @@ body>div {
     flex-direction: column;
 }
 
+@media (orientation: landscape) {
+    body>div {
+        flex-direction: row;
+    }
+    #separator {
+        height: 100%;
+        width: 1rem;
+    }
+}
+
 #separator {
-    background-color: #111111;
+    background-color: #151515;
     height: 1rem;
     flex-grow: 0;
 }
@@ -35,20 +46,24 @@ body>div {
     font-weight: bolder;
 }
 
-button {
-    padding:0;
-    width: 15rem;
-    height: 15rem;
-    font-size: 5rem;
-}
-
-.btnContainer {
+.lifeBtnContainer {
     display: flex;
     flex-direction: column;
     margin: 5rem;
 }
 
-button + button {
+.lifeBtn {
+    padding:0;
+    width: 15rem;
+    height: 15rem;
+    font-size: 5rem;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 15%;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    border: none;
+}
+
+.lifeBtn + .lifeBtn {
     margin-top: 5rem;
 }
 
