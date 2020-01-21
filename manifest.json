@@ -1,0 +1,10 @@
+{
+    "short_name": "Counter",
+    "name": "Life counter",
+    "display": "standalone",
+    "background_color": "#8B4513",
+    "start_url": "/mtg/",
+    "scope": "/mtg/",
+    "theme_color": "#8B4513"
+  
+}
