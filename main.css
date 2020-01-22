@@ -7,11 +7,19 @@ html, body, body>div {
     height:100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+body {
+  background-image: url(images/texture.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 body>div {
     display: flex;
     flex-direction: column;
+    opacity: 0.6;
 }
 
 @media (orientation: landscape) {
@@ -43,6 +51,7 @@ body>div {
 }
 
 .player .total {
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 30rem;
@@ -60,10 +69,11 @@ body>div {
     width: 15rem;
     height: 15rem;
     font-size: 5rem;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,1);
     border-radius: 15%;
-    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    box-shadow: 0 0 2rem rgba(0,0,0,.8);
     border: none;
+    color: white;
 }
 
 .lifeBtn + .lifeBtn {
