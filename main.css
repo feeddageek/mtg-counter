@@ -80,11 +80,38 @@ body>div {
     margin-top: 5rem;
 }
 
-#opponent {
-    background-color: darkred;
+.rotate180 {
     transform: rotate(180deg);
 }
 
-#me {
-    background-color: darkgreen;
+.color-1 {
+    background-color:darkgreen ;
+}
+
+.color-2 {
+    background-color:darkred ;
+}
+
+.color-3 {
+    background-color:darkblue ;
+}
+
+.color-4 {
+    background-color:darkmagenta ;
+}
+
+.color-5 {
+    background-color:orangered ;
+}
+
+.color-6 {
+    background-color:darkcyan ;
+}
+
+.color-7 {
+    background-color:darkgoldenrod ;
+}
+
+.color-8 {
+    background-color: crimson;
 }

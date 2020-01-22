@@ -2,12 +2,14 @@ package view;
 
 import coconut.ui.View;
 import data.PlayerModel;
+
 class PlayerView extends View {
-    @:attribute var id:String;
+    @:attribute var color:String;
+    @:attribute var flip:Bool = false;
     @:state var player:PlayerModel = new PlayerModel();
 
     function render()
-    <div class="player" id={id}>
+    <div class='player color-${color} ${flip?" rotate180":""}'>
         <div class="lifeBtnContainer">
             <button class="lifeBtn" onclick={player.dec(5)}>-5</button>
             <button class="lifeBtn" onclick={player.dec()}>-</button>
